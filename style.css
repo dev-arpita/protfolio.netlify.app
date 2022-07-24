@@ -24,10 +24,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
+
 a {
   text-decoration: none;
 }
@@ -103,7 +100,7 @@ p {
 /*hero*/
 
 .hero {
-  background: url(img/subtle-stripes.svg);
+  background: url(/images/subtle-stripes.svg);
   height: 100%;
   padding: 2rem 5rem;
   margin: 0 auto;
