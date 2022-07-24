@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #544a85;
+  --clr-secondary: #f77c00;
+  --clr-accent: #07d9e0;
+--fw-: 600
+}
+
+/*general styles*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+a {
+  text-decoration: none;
+}
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p {
+  font-weight:
+  500;
+}
+/*flex*/
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-nav {
+    flex-direction: row;
+  }
+}
+/*grid*/
+
+.grid {
+  display: grid;
+}
+/*inline-lists*/
+
+.inline-lists {
+  list-style-type: none;
+  padding: 2rem 0;
+}
+
+.list-item {
+  padding-right: 2rem;
+  font-weight: var(--fw-);
+
+}
+
+.list-item:hover {
+  color: var(--clr-primary);
+  opacity: 1;
+}
+
+/*head-section*/
+
+.logo-section {
+  flex-direction: row;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo-username {
+  color: var(--clr-primary);
+}
+
+/*hero*/
+
+.hero {
+  background: url(img/subtle-stripes.svg);
+  height: 100%;
+  padding: 2rem 5rem;
+  margin: 0 auto;
+}
+
+.hero__title {
+font-size: 5rem;
+letter-spacing: -1px;
+}
+
+strong {
+  color: var(--clr-secondary);
+}
+
+.hero__subtitle {
+font-size: 2.5rem;
+margin-top: 0;
+font-weight: var(--fw-);
+}
+
+em {
+  color: #7a2b0f;
+  font-style: normal;
+}
+
+/*social--links*/
+
+/*icons*/
+.icon-container {
+width: 50px;
+height: 50px;
+background: black;
+padding: 1.5rem 2rem;
+border-radius: 50%;
+justify-content: center;
+margin-bottom: 2rem;
+color: var(--clr-accent);
+transition: background .5s ease-in-out;
+ }
+.icon-container:hover {
+background: lightgrey;
+color: var(--clr-primary);
+
+}
+
+/*buttons*/
+
+.btn {
+width: 150px;
+padding: 1rem 2rem;
+text-align: center;
+color: #fff;
+font-weight: 600;
+display: block;
+border-radius: 20px;
+box-shadow: 0 0 30px #9370ba;
+margin: 3rem 2rem;
+}
+
+.btn--primary {
+  background: var(--clr-primary)
+}
